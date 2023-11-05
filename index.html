@@ -78,7 +78,7 @@
                 `<div class="message__text"> ${messageText}</div>`;
             chatLog.appendChild(messageElement);
             chatLog.scrollTop = chatLog.scrollHeight;
-            fetch('http://localhost:3000',{
+            fetch('http://localhost:3000/',{
                 method:'POST',
                 headers:{
                     'Content-Type': 'application/json'

@@ -15,7 +15,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
-app.fetch("/", async ( req , res )=>{
+app.get("/", async ( req , res )=>{
 
     const {message} = req.body;
 
